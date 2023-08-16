@@ -63,10 +63,10 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course // object destructure 
+const {courseInstructor : name} = course // object destructure 
 
 // console.log(courseInstructor);
-console.log(instructor);
+console.log(name);
 
 // {
 //     "name": "harsh",
