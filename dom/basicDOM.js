@@ -3,7 +3,7 @@ let lastName = 'harsh';
 
 let nameObj = {
     firstName : "harsh",
-    lastName : "kain"
+    lastName : "kumar"
 }
 
 console.log(nameObj);
