@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Container</h1>
+        <ul id="ul">
+            <li><img width="300px " src="../images/discord.png" alt=""></li>
+            <li><img width="300px " src="../images/caPortfolio.png" alt=""></li>
+            <li><img width="300px " id="color" src="../images/colorGenerator.png" alt=""></li>
+            <a id="google" href="https://www.google.co.in/">Google </a>
+        </ul>
+    </div>
+    <script>
+        /*
+        document.getElementById('ul').addEventListener('click', (e)=>{
+            console.log("click inside the ul");
+        }, false)
+        document.getElementById('color').addEventListener('click', (e)=>{
+            console.log("click on color img");
+            e.stopPropagation()
+            
+        }, false)
+        document.getElementById('google').addEventListener('click', (e)=>{
+            
+            console.log("click on the google ");
+            e.preventDefault();
+            e.stopPropagation()
+            
+        }, false)
+        */
+
+        document.querySelector('#ul').addEventListener('click', (e)=>{
+            if(e.target.tagName === 'IMG'){
+                let removeELement = e.target.parentNode;
+                removeELement.remove();
+
+            }
+            //parentNode.removeChild(removeELement)
+        },false)
+    </script>
+</body>
+</html>
